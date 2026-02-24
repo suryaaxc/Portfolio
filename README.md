@@ -14,13 +14,6 @@
 Welcome to my **portfolio website**! This site showcases my skills, experience, education, projects, and how to get in touch with me. It's built with **React** and **Vite** for a fast, modern web experience. You can explore my work, learn about my journey, and contact me directly.
 
 ---
-
-## Demo
-
-![Portfolio Demo](file:///C:/Users/surya/OneDrive/Pictures/Screenshots/Screenshot%202026-02-25%20000719.png)
-
----
-
 ## Live Preview
 
 Check out the live preview of the portfolio website here:  
