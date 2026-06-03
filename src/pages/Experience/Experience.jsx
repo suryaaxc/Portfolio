@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary } from "lucide-react";
+import { Code2, Activity, Cpu, Layers, Network, Binary, Brain, Wrench } from "lucide-react";
 
 const ExperienceCard = ({
   title,
@@ -53,30 +53,30 @@ const ExperienceCard = ({
 
 const ExperienceSection = () => {
   const experiences = [
-    // {
-    //   icon: Network,
-    //   title: "WordPress Developer",
-    //   company: "Fiverr",
-    //   period: "2028-2029",
-    //   description:
-    //     "Worked on developing and customizing WordPress websites for clients globally.",
-    // },
-    // {
-    //   icon: Layers,
-    //   title: "Junior Frontend Developer",
-    //   company: "Sera Programmer",
-    //   period: "2029-2030",
-    //   description:
-    //     "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
-    // },
-    // {
-    //   icon: Code2,
-    //   title: "JavaScript Developer",
-    //   company: "ReactJS",
-    //   period: "2031 - Present",
-    //   description:
-    //     "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
-    // },
+    {
+      icon: Layers,
+      title: "AI & Full-Stack Integration Intern",
+      company: "CodeAlpha",
+      period: "June 2026 - Present",
+      description:
+        "Developing production-ready full-stack software embedded with AI subsystems, including a low-latency AI Language Translation Tool with dynamic tokenization.",
+    },
+    {
+      icon: Brain,
+      title: "Artificial Intelligence Intern",
+      company: "Codec Technologies India",
+      period: "June 2026 - Present",
+      description:
+        "Engineering core ML pipelines and designing scalable data processing workflows, managing complex data matrices and vector extraction layers.",
+    },
+    {
+      icon: Activity,
+      title: "Pitched Concept: SmartElevator AI",
+      company: "Hackrax 2.0 Ideathon (1st Runner-Up)",
+      period: "2024",
+      description:
+        "Designed a context-aware elevator routing blueprint using computer vision for FCFS sequence tracking and lobby load balancing.",
+    },
   ];
 
   return (
@@ -130,7 +130,7 @@ const ExperienceSection = () => {
         <div className="absolute top-20 left-20 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/10 rounded-full filter blur-3xl animate-pulse delay-1000" />
       </div>
-    </>
+    </network.network_element.network_element_name.replace(/ /g, "_")_<>
   );
 };
 
