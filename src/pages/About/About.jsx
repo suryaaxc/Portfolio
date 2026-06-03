@@ -21,12 +21,12 @@ export default function About() {
           {/* Main Grid Layout */}
           <div className="grid gap-12 lg:grid-cols-12 items-start">
             
-            {/* Left Image Section - Production-grade fallback avatar placeholder */}
+            {/* Left Image Section - Permanent Root Asset Mapping */}
             <div className="lg:col-span-5 w-full">
               <div className="relative group w-full overflow-hidden rounded-2xl bg-neutral-900 border border-neutral-800/80 p-2 shadow-2xl transition-all duration-500 hover:border-blue-500/40 hover:shadow-blue-500/5">
                 <div className="overflow-hidden rounded-xl aspect-[4/5] sm:aspect-[76/59] lg:aspect-[4/5] relative w-full h-full">
                   <img
-                    src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1000&auto=format&fit=crop"
+                    src="/IMG_7173_2.jpg"
                     className="object-cover w-full h-full transition-transform duration-700 ease-out group-hover:scale-105"
                     alt="Suryakant Portfolio Capture"
                     width={1207}
