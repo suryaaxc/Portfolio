@@ -42,24 +42,25 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
-  "Frontend Developer & UI/UX Enthusiast",
-  "JavaScript Developer & Framework Explorer",
-  "Learning MERN Stack Step by Step",
-  "Linux & GitHub Enthusiast for DevOps Basics"
-];
+    "Full-Stack Developer & Systems Builder",
+    "Machine Learning & AI Data Engineer",
+    "Node.js, Python, & React Specialist",
+    "Open Source Contributor & Architecture Enthusiast"
+  ];
+  
   const [code] = useState(`
 const profile = {
     name: 'Suryakant',
-    title: 'Frontend Developer | UI/UX Enthusiast | Problem Solver',
+    title: 'Full-Stack Developer | Machine Learning Engineer | Problem Solver',
     skills: [
-        'C','C++','JavaScript', 
-        'HTML', 'CSS','Python','GraphQL',
-        'Git', 'Linux', 'Figma'
+        'React', 'Next.js', 'Node.js', 
+        'Express', 'Python', 'Machine Learning', 
+        'Data Structures', 'Git', 'Linux', 'SQL'
     ],
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 0,
+    yearsOfExperience: 1,
     hireable: function() {
         return (
             this.hardWorker &&
@@ -210,7 +211,7 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript Lover 🚀 | Frontend Developer 🔧 | Crafting interfaces and coding the future 💻✨
+                  Full-Stack Architecture 🚀 | Machine Learning & Analytics 🔧 | Engineering intelligent platforms for the future 💻✨
                 </p>
               </div>
 
@@ -246,8 +247,7 @@ const profile = {
               {/* Floating badges */}
               <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
                 <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400">
-                  <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;UI
-                  Magic
+                  <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;UI Magic
                 </div>
               </div>
               <div className="hidden lg:block absolute right-10 top-20 animate-float">
