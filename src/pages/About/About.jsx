@@ -1,5 +1,3 @@
-import HeroImg from "@/assets/images/IMG_7173.jpg";
-
 export default function About() {
   return (
     <>
