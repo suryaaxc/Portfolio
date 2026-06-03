@@ -23,7 +23,7 @@ export default function About() {
           {/* Main Grid Layout */}
           <div className="grid gap-12 lg:grid-cols-12 items-start">
             
-            {/* Left Image Section - Pure Cloud Asset Tracking */}
+            {/* Left Image Section - Expert Level Image Frame */}
             <div className="lg:col-span-5 w-full">
               <div className="relative group w-full overflow-hidden rounded-2xl bg-neutral-900 border border-neutral-800/80 p-2 shadow-2xl transition-all duration-500 hover:border-blue-500/40 hover:shadow-blue-500/5">
                 <div className="overflow-hidden rounded-xl aspect-[4/5] sm:aspect-[76/59] lg:aspect-[4/5] relative w-full h-full">
