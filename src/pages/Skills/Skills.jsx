@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
-import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
+import { Code2, Paintbrush, Database, Layout, Cpu, Cloud, Brain } from "lucide-react";
 import {
   FaReact,
   FaNodeJs,
@@ -26,6 +26,7 @@ import {
   SiFirebase,
   SiVercel,
   SiVite,
+  SiScikitlearn,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
@@ -71,71 +72,43 @@ const SkillsSection = () => {
       title: "Frontend Development",
       color: "text-blue-400",
       skills: [
-        {
-          name: "HTML5",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" />,
-        },
-        {
-          name: "CSS3",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" />,
-        },
         { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
-        {
-          name: "Next.js",
-          icon: <SiNextdotjs className="w-4 h-4 text-white" />,
-        },
+        { name: "Next.js", icon: <SiNextdotjs className="w-4 h-4 text-white" /> },
+        { name: "TypeScript", icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" /> },
       ],
     },
-    // {
-    //   icon: Database,
-    //   title: "Backend Development",
-    //   color: "text-green-400",
-    //   skills: [
-    //     {
-    //       name: "Node.js",
-    //       icon: <FaNodeJs className="w-4 h-4 text-[#339933]" />,
-    //     },
-    //     {
-    //       name: "Python",
-    //       icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
-    //     },
-    //     {
-    //       name: "PostgreSQL",
-    //       icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
-    //     },
-    //     {
-    //       name: "MongoDB",
-    //       icon: <SiMongodb className="w-4 h-4 text-[#47A248]" />,
-    //     },
-    //     {
-    //       name: "GraphQL",
-    //       icon: <SiGraphql className="w-4 h-4 text-[#E10098]" />,
-    //     },
-    //   ],
-    // },
     {
-      icon: Layout,
-      title: "UI/UX Design",
+      icon: Database,
+      title: "Backend Architecture",
+      color: "text-green-400",
+      skills: [
+        { name: "Node.js", icon: <FaNodeJs className="w-4 h-4 text-[#339933]" /> },
+        { name: "Express.js", icon: <BsGrid1X2 className="w-4 h-4 text-[#339933]" /> },
+        { name: "PostgreSQL", icon: <SiPostgresql className="w-4 h-4 text-[#336791]" /> },
+        { name: "MongoDB", icon: <SiMongodb className="w-4 h-4 text-[#47A248]" /> },
+      ],
+    },
+    {
+      icon: Brain,
+      title: "Machine Learning & AI",
       color: "text-purple-400",
       skills: [
-        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
-        {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
-        },
+        { name: "Python", icon: <FaPython className="w-4 h-4 text-[#3776AB]" /> },
+        { name: "Scikit-Learn", icon: <SiScikitlearn className="w-4 h-4 text-[#F7931E]" /> },
+        { name: "Data Analytics", icon: <Cpu className="w-4 h-4 text-[#47A248]" /> },
+        { name: "Data Pipelines", icon: <FcWorkflow className="w-4 h-4 text-[#38B2AC]" /> },
       ],
     },
     {
       icon: Cpu,
-      title: "Tools & Technologies",
+      title: "DevOps & Core Tools",
       color: "text-pink-400",
       skills: [
-        {
-          name: "VS Code",
-          icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" />,
-        },
-        { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
-        { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
+        { name: "Git & GitHub", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
+        { name: "Linux Systems", icon: <FaLinux className="w-4 h-4 text-white" /> },
+        { name: "Docker Core", icon: <FaDocker className="w-4 h-4 text-[#2496ED]" /> },
+        { name: "VS Code", icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" /> },
       ],
     },
   ];
@@ -149,7 +122,7 @@ const SkillsSection = () => {
         <div className="flex justify-center items-center ">
           <IconCloudDemo />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {skillCategories.map((category, index) => (
             <SkillCard
               key={index}
