@@ -16,13 +16,13 @@ export default function About() {
 
           <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24 items-center">
             
-            {/* Left Image Section with subtle styling */}
-            <div className="relative mb-6 sm:mb-0 group">
+            {/* Left Image Section - Original Colors with clean border */}
+            <div className="relative mb-6 sm:mb-0">
               <div className="bg-gradient-to-b aspect-76/59 relative rounded-2xl p-px from-neutral-800 via-neutral-700 to-transparent">
                 <img
                   src={HeroImg}
-                  className="rounded-[15px] shadow block filter grayscale contrast-125 hover:grayscale-0 transition-all duration-500 object-cover w-full h-full"
-                  alt="Suryakant developer illustration"
+                  className="rounded-[15px] shadow block object-cover w-full h-full border border-neutral-800"
+                  alt="Suryakant"
                   width={1207}
                   height={929}
                 />
