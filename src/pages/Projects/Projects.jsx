@@ -8,39 +8,35 @@ const projects = [
     title: "Movie Matcher Flex — AI Movie Recommendation System",
     description:
       "Architected a content-based recommendation engine utilizing TF-IDF Vectorization and Cosine Similarity metrics to process a data matrix of 32M+ records with sub-second real-time inference. Engineered high-performance data preprocessing pipelines with Pandas and NumPy.",
-    src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
-    color: "#60A5FA", // Premium Soft Blue
+    src: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1025&auto=format&fit=crop", // Cinema/Matrix Theme Thumbnail
+    color: "#60A5FA", 
     githubLink: "https://github.com/suryaaxc/Movie-Matcher-Flex",
-    liveLink: "#",
+    liveLink: "https://movie-matcher-flex.streamlit.app/",
   },
   {
-    title: "SmartElevator AI — Queue Management & Thermal Analytics",
+    title: "PolyGlot.AI — Advanced AI Translation Platform",
     description:
-      "Secured 1st Runner-Up at Hackrax 2.0 Ideathon. Designed a computer vision-driven queue-tracking blueprint using OpenCV to enforce strict FCFS sequence tracking and real-time lobby spatial heatmaps to eliminate high-density hostel overcrowding.",
-    src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
-    color: "#2DD4BF", // Teal
-    githubLink: "https://github.com/suryaaxc/SmartElevator-AI",
-    liveLink: "#",
+      "Engineered an intelligent Language Translation tool featuring low-latency processing and dynamic text tokenization. Integrated full-stack API orchestration with seamless state management to bridge complex translation queries in real-time.",
+    src: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1171&auto=format&fit=crop", // Language/Neural-Network Theme Thumbnail
+    color: "#2DD4BF", 
+    githubLink: "https://github.com/suryaaxc/",
+    liveLink: "https://polyglot-ai-suryaxc.streamlit.app/",
   },
   {
     title: "NebulaX Collective — Multi-Spectrum Space Exploration Hub",
     description:
       "Collaborated on a multi-spectrum astronomy platform utilizing NASA API datasets to stream celestial imagery and planetary telemetry. Integrated Three.js / WebGL pipelines for interactive 3D solar rendering with robust Node.js data ingestion layers.",
-    src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
-    color: "#C084FC", // Purple
+    src: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1172&auto=format&fit=crop", // Deep Space/Nebula Theme Thumbnail
+    color: "#C084FC", 
     githubLink: "https://github.com/suryaaxc/NebulaX-Collective",
-    liveLink: "#",
+    liveLink: "https://nebulax-nikhil.vercel.app/",
   },
   {
     title: "Premium AI-Driven Developer Command Portfolio",
     description:
       "Architected a highly responsive developer ecosystem using React and Vite with fluid micro-animations. Integrated interactive technical clouds, live system terminal code blocks, and adaptive grid metrics with fully optimized Vercel edge deployment hooks.",
-    src: "portfolio.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
-    color: "#F59E0B", // Amber / Amber Pulse Glow
+    src: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1170&auto=format&fit=crop", // Clean Code/IDE Theme Thumbnail
+    color: "#F59E0B", 
     githubLink: "https://github.com/suryaaxc/portfolio",
     liveLink: "https://github.com/suryaaxc",
   }
@@ -54,7 +50,6 @@ export default function Projects() {
   });
 
   useEffect(() => {
-    // Add specific styles for 1366x768 resolution
     const style = document.createElement("style");
     style.textContent = `
       @media screen and (width: 1366px) and (height: 768px),
@@ -71,7 +66,6 @@ export default function Projects() {
     `;
     document.head.appendChild(style);
 
-    // Resolution check function
     const checkResolution = () => {
       const isTargetResolution =
         window.innerWidth >= 1360 &&
@@ -107,7 +101,7 @@ export default function Projects() {
               <Card
                 key={`p_${i}`}
                 i={i}
-                url={project.link}
+                url={project.src}
                 title={project.title}
                 color={project.color}
                 description={project.description}
@@ -158,7 +152,6 @@ function Card({
           transition: { duration: 0.3 },
         }}
       >
-        {/* Modern split card design with subtle border tint matching the component color */}
         <div 
           className="w-full flex flex-col md:flex-row bg-zinc-900/90 backdrop-blur-md rounded-2xl overflow-hidden shadow-2xl border"
           style={{ borderColor: `${color}20` }}
@@ -174,7 +167,6 @@ function Card({
               transition={{ duration: 0.4 }}
             />
 
-            {/* Colored overlay on hover */}
             <motion.div
               className="absolute inset-0"
               style={{ backgroundColor: color, mixBlendMode: "overlay" }}
@@ -183,7 +175,6 @@ function Card({
               transition={{ duration: 0.3 }}
             />
 
-            {/* Project identity matrix */}
             <div className="absolute top-4 left-4 md:top-6 md:left-6 bg-black/70 backdrop-blur-md text-white px-3 py-1 md:px-4 md:py-1.5 rounded-full text-xs font-mono tracking-wider">
               CORE_SYSTEM_0{i + 1}
             </div>
@@ -212,7 +203,7 @@ function Card({
               <div className="w-full h-[1px] bg-zinc-800/80 mb-4" />
 
               <div className="flex items-center gap-6">
-                {/* GitHub Action Link */}
+                {/* Repository Link */}
                 <motion.a
                   href={githubLink}
                   target="_blank"
@@ -237,7 +228,7 @@ function Card({
                   <span className="text-xs font-mono tracking-wide">Repository</span>
                 </motion.a>
 
-                {/* Live Sandbox Production Link */}
+                {/* Live Production Link */}
                 <motion.a
                   href={liveLink}
                   target="_blank"
