@@ -23,19 +23,18 @@ export default function About() {
           {/* Main Grid Layout */}
           <div className="grid gap-12 lg:grid-cols-12 items-start">
             
-            {/* Left Image Section - Bypassed Local Assets to solve Vite ENOENT Build Bug */}
+            {/* Left Image Section - Pure Cloud Asset Tracking */}
             <div className="lg:col-span-5 w-full">
               <div className="relative group w-full overflow-hidden rounded-2xl bg-neutral-900 border border-neutral-800/80 p-2 shadow-2xl transition-all duration-500 hover:border-blue-500/40 hover:shadow-blue-500/5">
                 <div className="overflow-hidden rounded-xl aspect-[4/5] sm:aspect-[76/59] lg:aspect-[4/5] relative w-full h-full">
                   <img
-                    src="https://i.postimg.cc/mD363S6D/IMG-7173.jpg" // 👈 Bwaal mountain photo live from cloud CDN matrix
+                    src="https://i.postimg.cc/mD363S6D/IMG-7173.jpg"
                     className="object-cover w-full h-full transition-transform duration-700 ease-out group-hover:scale-105"
                     alt="Suryakant Portfolio Capture"
                     width={1207}
                     height={929}
                     loading="lazy"
                   />
-                  {/* Premium overlay pulse */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#04081A]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                 </div>
               </div>
