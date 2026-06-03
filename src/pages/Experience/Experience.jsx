@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary, Brain, Wrench } from "lucide-react";
+import { Layers, Brain } from "lucide-react";
 
 const ExperienceCard = ({
   title,
@@ -69,14 +69,6 @@ const ExperienceSection = () => {
       description:
         "Engineering core ML pipelines and designing scalable data processing workflows, managing complex data matrices and vector extraction layers.",
     },
-    {
-      icon: Activity,
-      title: "Pitched Concept: SmartElevator AI",
-      company: "Hackrax 2.0 Ideathon (1st Runner-Up)",
-      period: "2024",
-      description:
-        "Designed a context-aware elevator routing blueprint using computer vision for FCFS sequence tracking and lobby load balancing.",
-    },
   ];
 
   return (
@@ -118,8 +110,8 @@ const ExperienceSection = () => {
             </p>
           </div>
 
-          {/* Experience grid with improved layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          {/* Experience grid centered for 2 cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
             {experiences.map((exp, index) => (
               <ExperienceCard key={index} {...exp} />
             ))}
