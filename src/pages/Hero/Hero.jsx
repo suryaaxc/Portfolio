@@ -48,6 +48,7 @@ export default function Hero() {
     "Open Source Contributor & Architecture Enthusiast"
   ];
   
+  // Dynamic terminal code block content synchronized with your master profile
   const [code] = useState(`
 const profile = {
     name: 'Suryakant',
@@ -142,13 +143,8 @@ const profile = {
         >
           <div className="absolute inset-0"></div>
 
-          {/* Choose one of these background options */}
+          {/* Grid Layout Canvas */}
           <GridBackground />
-
-          {/* Or keep the original backgrounds if you prefer */}
-          {/* <HexagonBackground /> */}
-          {/* <AnimatedGrid /> */}
-          {/* <DotBackground /> */}
 
           {/* Meteors Effect */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -230,9 +226,11 @@ const profile = {
                   </span>
                 </a>
 
-                {/* Contact Button */}
+                {/* Get Resume Button — Injected cloud storage deployment matrix */}
                 <a
-                  href="#"
+                  href="YOUR_RESUME_DRIVE_LINK_HERE"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">
